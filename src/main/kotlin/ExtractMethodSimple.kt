@@ -1,12 +1,9 @@
 fun main () {
-    val extractMethodBefore = ExtractMethodBefore()
-    extractMethodBefore.printOwing(29.99)
-
-    val extractMethodAfter = ExtractMethodAfter()
-    extractMethodAfter.printOwing(29.99)
+    val statement = Statement()
+    statement.printOwing(29.99)
 }
 
-class ExtractMethodBefore {
+class StatementBefore {
     private val name = "Phil"
 
     fun printOwing(amount: Double) {
@@ -22,7 +19,7 @@ class ExtractMethodBefore {
     }
 }
 
-class ExtractMethodAfter {
+class Statement {
     private val name = "Phil"
 
     fun printOwing(amount: Double) {
